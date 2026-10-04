@@ -2,374 +2,528 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-  <meta name="description" content="Happy 24th Birthday, Restu Oktaviani" />
-  <title>For Restu — 22.10.2002</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Google Fonts: Cormorant Garamond (serif) + Inter (sans-serif) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <title>Happy Birthday, Restu Oktaviani 🤍</title>
 
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
-  <!-- ============================================================
-       SECTION 0 — INTRO / ENTRY SCREEN
-       ============================================================ -->
-  <section id="intro" class="intro-screen" aria-label="Entry">
-    <div class="intro-content">
-      <p class="intro-date reveal-text">13.03.2020</p>
-      <p class="intro-quote reveal-text delay-1">
-        Some people come into our lives once.<br />
-        Somehow, you came into mine twice.
+  <!-- =========================
+       BACKGROUND MUSIC
+  ========================== -->
+  <audio id="bgMusic" loop preload="auto">
+    <source
+      src="Ardhito Pramono - First Love (Nikka Costa).mp3"
+      type="audio/mpeg"
+    />
+  </audio>
+
+
+  <!-- =========================
+       MUSIC BUTTON
+  ========================== -->
+  <button id="musicBtn" class="music-btn" aria-label="Toggle music">
+    🎵
+  </button>
+
+
+  <!-- =========================
+       HERO / SECTION 1
+  ========================== -->
+  <section class="section hero" id="home">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+      <p class="eyebrow">
+        A LITTLE SOMETHING FOR YOU
       </p>
-      <button class="btn-open reveal-text delay-2" id="btnOpen" aria-label="Open the story">
-        OPEN
-      </button>
+
+      <h1>
+        Happy Birthday,
+        <span>Restu</span>
+      </h1>
+
+      <p class="hero-subtitle">
+        Today is about celebrating you.
+      </p>
+
+      <div class="hero-photo">
+        <img
+          src="restu-2020.jpeg"
+          alt="Restu"
+        />
+      </div>
+
+      <div class="scroll-indicator">
+        <span>Scroll slowly</span>
+        <div class="scroll-line"></div>
+      </div>
+
     </div>
-    <div class="grain-overlay"></div>
-    <div class="vignette"></div>
+
   </section>
 
-  <!-- ============================================================
-       MAIN STORY — hidden until OPEN is clicked
-       ============================================================ -->
-  <main id="mainStory" class="hidden" aria-label="Birthday story">
 
-    <!-- Music Control — controls HTML5 audio -->
-    <div class="music-control" id="musicControl" aria-label="Music controls">
-      <button id="musicToggle" class="music-btn" aria-label="Play music">
-        <span class="music-icon" id="floatIcon">♪</span>
-        <span class="music-label" id="floatLabel">First Love</span>
-      </button>
-    </div>
+  <!-- =========================
+       SECTION 2 — BEGINNING
+  ========================== -->
+  <section class="section beginning" id="beginning">
 
-    <!-- Progress indicator -->
-    <nav class="chapter-progress" id="chapterProgress" aria-label="Chapter progress">
-      <div class="progress-bar" id="progressBar"></div>
-      <span class="chapter-label" id="chapterLabel">Chapter 1</span>
-    </nav>
+    <div class="section-inner">
 
-    <!-- ============================================================
-         SECTION 1 — THE BEGINNING
-         ============================================================ -->
-    <section id="s1" class="story-section s-beginning" data-chapter="The Beginning">
-      <div class="section-inner fade-in-section">
-        <p class="section-eyebrow">Chapter I</p>
-        <h2 class="section-headline">13 March 2020</h2>
-        <p class="section-sub">The day I met my first love.</p>
+      <p class="section-number">
+        01
+      </p>
 
-        <div class="photo-frame">
-          <!-- PHOTO 1: replace src if filename differs -->
+      <h2>
+        Where it all
+        <span>began.</span>
+      </h2>
+
+      <div class="story-grid">
+
+        <div class="story-photo">
           <img
-            src="assets/restu-2020.jpeg"
-            alt="Restu, 2020"
-            class="story-photo cinematic-photo"
-            loading="lazy"
+            src="restu-past.jpeg"
+            alt="Restu in the past"
           />
-          <div class="photo-overlay"></div>
         </div>
 
-        <p class="section-body">
-          I didn't know it back then,<br />
-          but that day would become part of<br />
-          one of the most important stories in my life.
-        </p>
-      </div>
-      <div class="grain-overlay"></div>
-      <div class="vignette"></div>
-    </section>
+        <div class="story-text">
 
-    <!-- ============================================================
-         SECTION 2 — THE PAST
-         ============================================================ -->
-    <section id="s2" class="story-section s-past" data-chapter="The Past">
-      <div class="section-inner fade-in-section">
-        <p class="section-eyebrow chapter-marker">Chapter II</p>
-        <h2 class="section-headline">Then, life happened.</h2>
-
-        <div class="photo-frame photo-frame--right">
-          <!-- PHOTO 2: replace src if filename differs -->
-          <img
-            src="assets/restu-past.jpeg"
-            alt="Restu, the past years"
-            class="story-photo cinematic-photo"
-            loading="lazy"
-          />
-          <div class="photo-overlay"></div>
-        </div>
-
-        <div class="section-body stanza">
-          <p>We were young.</p>
-          <p>We had our own paths, our own dreams,</p>
-          <p>and eventually, we went our separate ways.</p>
-        </div>
-      </div>
-      <div class="grain-overlay"></div>
-      <div class="vignette dark-vignette"></div>
-    </section>
-
-    <!-- ============================================================
-         SECTION 3 — THE THINGS I COULDN'T FIND
-         ============================================================ -->
-    <section id="s3" class="story-section s-search" data-chapter="What I Couldn't Find">
-      <div class="section-inner fade-in-section">
-        <p class="section-eyebrow">Chapter III</p>
-
-        <div class="cinematic-paragraphs">
-          <p class="cin-line">For years, I met different people.</p>
-          <p class="cin-line delay-sm">I laughed with them.<br />I got to know different personalities.<br />I experienced different stories.</p>
-          <p class="cin-line delay-md">But somehow,<br />I kept looking for little pieces of you.</p>
-          <p class="cin-line delay-lg">Your personality.<br />Your little habits.<br />The way you are.</p>
-          <p class="cin-line delay-lg emphasis-line">And I never found anyone quite like you.</p>
-          <p class="cin-line delay-xl final-emphasis">Maybe because there was never really another you.</p>
-        </div>
-      </div>
-      <div class="grain-overlay"></div>
-      <div class="vignette"></div>
-    </section>
-
-    <!-- ============================================================
-         SECTION 4 — 2026 / WE FOUND OUR WAY BACK
-         ============================================================ -->
-    <section id="s4" class="story-section s-reunion" data-chapter="2026">
-      <div class="section-inner fade-in-section">
-        <p class="section-eyebrow">Chapter IV</p>
-
-        <div class="reunion-text">
-          <p class="reunion-intro">And then...</p>
-          <h2 class="section-headline reunion-year">2026.</h2>
-          <p class="section-sub">After all those years,<br />somehow, we found our way back to each other.</p>
-        </div>
-
-        <div class="photo-frame photo-frame--glow">
-          <!-- PHOTO 3: replace src if filename differs -->
-          <img
-            src="assets/reunited-2026.jpeg"
-            alt="Us, reunited in 2026"
-            class="story-photo cinematic-photo reveal-slow"
-            loading="lazy"
-          />
-          <div class="photo-overlay glow-overlay"></div>
-        </div>
-
-        <p class="section-body">
-          Some stories don't really end.<br />
-          Sometimes, they simply take a longer way home.
-        </p>
-      </div>
-      <div class="grain-overlay"></div>
-      <div class="vignette"></div>
-    </section>
-
-    <!-- ============================================================
-         SECTION 5 — FIRST LOVE MUSIC
-         ============================================================ -->
-    <section id="s5" class="story-section s-music" data-chapter="First Love">
-      <div class="section-inner fade-in-section">
-        <p class="section-eyebrow">♪</p>
-        <h2 class="section-headline music-headline">First Love</h2>
-        <p class="music-desc">for the story that found its way back.</p>
-
-        <div class="music-player-card">
-          <div class="music-waveform" id="waveform">
-            <span></span><span></span><span></span><span></span>
-            <span></span><span></span><span></span><span></span>
-          </div>
-
-          <!-- HTML5 Audio Player -->
-          <!-- TO CHANGE SONG: replace assets/first-love.mp3 with your file path -->
-          <audio id="audioPlayer" loop preload="metadata">
-            <source src="assets/Ardhito Pramono - First Love (Nikka Costa).mp3" type="audio/mpeg" />
-          </audio>
-
-          <button class="btn-play-song" id="btnPlaySong" aria-label="Play First Love">
-            <span class="play-icon" id="playIcon">▶</span>
-            <span id="playLabel">Play First Love</span>
-          </button>
-
-          <div class="audio-progress-wrap">
-            <div class="audio-progress-bar" id="audioProgressBar"></div>
-          </div>
-
-          <p class="music-note">Utada Hikaru — First Love</p>
-        </div>
-      </div>
-      <div class="grain-overlay"></div>
-      <div class="vignette"></div>
-    </section>
-
-    <!-- ============================================================
-         SECTION 6 — OUR MEMORIES
-         ============================================================ -->
-    <section id="s6" class="story-section s-memories" data-chapter="Our Memories">
-      <div class="section-inner fade-in-section">
-        <p class="section-eyebrow">Chapter V</p>
-        <h2 class="section-headline">Our Memories</h2>
-      </div>
-
-      <!-- Memory 1 -->
-      <div class="memory-block fade-in-section">
-        <div class="photo-frame photo-frame--full">
-          <img src="assets/restu-2020.jpeg" alt="The beginning" class="story-photo memory-photo" loading="lazy" />
-          <div class="photo-overlay"></div>
-        </div>
-        <p class="memory-caption">One chapter.</p>
-      </div>
-
-      <!-- Memory 2 -->
-      <div class="memory-block memory-block--right fade-in-section">
-        <div class="photo-frame photo-frame--full">
-          <img src="assets/restu-past.jpeg" alt="The years apart" class="story-photo memory-photo" loading="lazy" />
-          <div class="photo-overlay dark-overlay"></div>
-        </div>
-        <p class="memory-caption">Years apart.</p>
-      </div>
-
-      <!-- Memory 3 -->
-      <div class="memory-block fade-in-section">
-        <div class="photo-frame photo-frame--full">
-          <img src="assets/reunited-2026.jpeg" alt="Finding each other again" class="story-photo memory-photo" loading="lazy" />
-          <div class="photo-overlay glow-overlay"></div>
-        </div>
-        <p class="memory-caption">Finding our way back.</p>
-      </div>
-
-      <!-- Memory 4 -->
-      <div class="memory-block memory-block--right fade-in-section">
-        <div class="photo-frame photo-frame--full">
-          <!-- PHOTO 4 (closing): replace src if filename differs -->
-          <img src="assets/restu-closing.jpeg" alt="Closing memory" class="story-photo memory-photo" loading="lazy" />
-          <div class="photo-overlay"></div>
-        </div>
-        <p class="memory-caption">Another version of us.</p>
-      </div>
-
-      <div class="grain-overlay"></div>
-      <div class="vignette"></div>
-    </section>
-
-    <!-- ============================================================
-         SECTION 7 — HAPPY 24TH BIRTHDAY
-         ============================================================ -->
-    <section id="s7" class="story-section s-birthday" data-chapter="Happy Birthday">
-      <div class="section-inner fade-in-section">
-        <p class="birth-date">22.10.2002</p>
-        <h1 class="birthday-headline">Happy 24th Birthday,<br />Restu.</h1>
-        <p class="section-body birthday-body">
-          After everything we've been through,<br />
-          I'm simply grateful that I get to celebrate<br />
-          another year of your life.
-        </p>
-      </div>
-      <div class="grain-overlay"></div>
-      <div class="vignette"></div>
-    </section>
-
-    <!-- ============================================================
-         SECTION 8 — THE LETTER
-         ============================================================ -->
-    <section id="s8" class="story-section s-letter" data-chapter="A Letter">
-      <div class="section-inner fade-in-section">
-        <p class="section-eyebrow">A Letter</p>
-        <div class="letter-content">
-          <p class="letter-salutation">Dear Restu,</p>
-
-          <p>I've been trying to figure out how to write this for a while now. There's no clean way to put years of something into words, but I'll try.</p>
-
-          <p>You were my first love. I don't think I fully understood what that meant when we were younger, but I understand it now. First love isn't just about the feelings — it's about the version of yourself you were when you met that person. You were part of mine.</p>
-
-          <p>When we went our separate ways, I didn't disappear from the world. I kept going, kept meeting people, kept building my life. But somewhere in the middle of all that, I noticed something. Every time I got close to someone new, I'd find myself searching. Not intentionally. But I'd catch myself noticing a personality trait, a way of laughing, a quiet habit — and thinking, that reminds me of her.</p>
-
-          <p>I never said it out loud. But I kept looking, and I never really found it. Because it was yours. Just yours.</p>
-
-          <p>And then 2026 happened. Somehow, after all of it, we found our way back to each other. I didn't see it coming, but when it did, it felt less like a surprise and more like something that had been quietly waiting.</p>
-
-          <p>I'm not writing this to romanticize the past or pretend things were perfect. I'm writing it because on your 24th birthday, I want you to know that I'm genuinely grateful. Grateful you exist. Grateful that I get to be part of your story again.</p>
-
-          <p>You deserve good things, Restu. More than you probably give yourself credit for.</p>
-
-          <p class="letter-closing">Happy birthday.</p>
-          <p class="letter-signature">— yours.</p>
-        </div>
-      </div>
-      <div class="grain-overlay"></div>
-      <div class="vignette"></div>
-    </section>
-
-    <!-- ============================================================
-         SECTION 9 — LIFE IS HARD, BUT KEEP GOING
-         ============================================================ -->
-    <section id="s9" class="story-section s-keepgoing" data-chapter="Keep Going">
-      <div class="section-inner fade-in-section">
-        <p class="section-eyebrow">For the harder days.</p>
-
-        <div class="keepgoing-lines">
-          <p class="kg-line">I know life won't always be kind.</p>
-          <p class="kg-line">There will be days when everything feels heavy.</p>
-          <p class="kg-line">Moments when the future feels uncertain.</p>
-          <p class="kg-line">When you're tired and you're not sure<br />what you're even fighting for anymore.</p>
-
-          <div class="kg-divider"></div>
-
-          <p class="kg-line">But please don't stop fighting<br />for the life you want.</p>
-          <p class="kg-line">Keep chasing your dreams.<br />Keep growing.<br />Keep becoming the person you want to be.</p>
-          <p class="kg-line">You don't have to figure everything out at once.</p>
-
-          <p class="kg-final">Just keep going.</p>
-        </div>
-
-        <p class="kg-rooting">I'll always be rooting for you.</p>
-      </div>
-      <div class="grain-overlay"></div>
-      <div class="vignette"></div>
-    </section>
-
-    <!-- ============================================================
-         SECTION 10 — FINAL MESSAGE
-         ============================================================ -->
-    <section id="s10" class="story-section s-final" data-chapter="The End">
-      <div class="section-inner fade-in-section">
-
-        <div class="photo-frame photo-frame--closing">
-          <!-- PHOTO 4 (closing): replace src if filename differs -->
-          <img
-            src="assets/restu-closing.jpeg"
-            alt="Closing photo"
-            class="story-photo cinematic-photo reveal-slow"
-            loading="lazy"
-          />
-          <div class="photo-overlay"></div>
-        </div>
-
-        <div class="final-text fade-in-section">
-          <h2 class="final-birthday">Happy 24th Birthday, Restu.</h2>
-          <p class="final-titles">My first love.</p>
-          <p class="final-titles">My unexpected second chance.</p>
-          <p class="final-titles">And someone I'm grateful to have found again.</p>
-
-          <div class="final-divider"></div>
-
-          <p class="final-message">
-            Whatever comes next,<br />
-            I hope we keep making memories worth remembering.
+          <p>
+            Sometimes, the most beautiful stories begin
+            without us even realizing it.
           </p>
 
-          <p class="final-rooting">I'm always rooting for you.</p>
+          <p>
+            A simple moment, a simple conversation,
+            and somehow it becomes a memory worth keeping.
+          </p>
 
-          <p class="final-chapter">See you in the next chapter.</p>
+          <p class="highlight">
+            And here we are.
+          </p>
 
-          <p class="final-footer">13.03.2020 — 2026 — ∞</p>
         </div>
+
       </div>
-      <div class="grain-overlay"></div>
-      <div class="vignette"></div>
-    </section>
 
-  </main><!-- /mainStory -->
+    </div>
 
+  </section>
+
+
+  <!-- =========================
+       SECTION 3 — TIME
+  ========================== -->
+  <section class="section time-section">
+
+    <div class="section-inner center">
+
+      <p class="section-number">
+        02
+      </p>
+
+      <h2>
+        Time moves,
+        <span>memories stay.</span>
+      </h2>
+
+      <p class="section-description">
+        Days turn into months.
+        Months turn into years.
+        But some moments somehow remain exactly where
+        we left them.
+      </p>
+
+      <div class="quote">
+        “Some people become a part of your story
+        without even trying.”
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       SECTION 4 — REUNITED
+  ========================== -->
+  <section class="section reunited" id="reunited">
+
+    <div class="section-inner">
+
+      <p class="section-number">
+        03
+      </p>
+
+      <div class="reunited-grid">
+
+        <div class="reunited-text">
+
+          <p class="eyebrow">
+            AND THEN
+          </p>
+
+          <h2>
+            We met
+            <span>again.</span>
+          </h2>
+
+          <p>
+            Funny how life works.
+            Sometimes it takes distance,
+            time, and countless ordinary days
+            before two people cross paths again.
+          </p>
+
+          <p>
+            And when it happens,
+            somehow it feels familiar.
+          </p>
+
+        </div>
+
+        <div class="reunited-photo">
+
+          <img
+            src="reunited-2026.jpeg"
+            alt="Reunited"
+          />
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       SECTION 5 — LETTER
+  ========================== -->
+  <section class="section letter-section">
+
+    <div class="section-inner">
+
+      <p class="section-number">
+        04
+      </p>
+
+      <div class="letter">
+
+        <p class="letter-small">
+          Dear Restu,
+        </p>
+
+        <p>
+          I don't know if words can really explain
+          everything I want to say today.
+        </p>
+
+        <p>
+          But I hope you know that you deserve
+          every good thing that comes your way.
+        </p>
+
+        <p>
+          I hope this new chapter brings you
+          more reasons to smile,
+          more moments to be proud of,
+          and more people who genuinely care about you.
+        </p>
+
+        <p>
+          Keep being the person you are.
+          You don't have to become someone else
+          to be worthy of beautiful things.
+        </p>
+
+        <p class="letter-highlight">
+          Happy birthday, Restu.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       SECTION 6 — MEMORIES
+  ========================== -->
+  <section class="section memories" id="memories">
+
+    <div class="section-inner">
+
+      <p class="section-number">
+        05
+      </p>
+
+      <h2>
+        Little
+        <span>memories.</span>
+      </h2>
+
+      <p class="section-description">
+        A few moments that deserve to be remembered.
+      </p>
+
+
+      <div class="memory-grid">
+
+        <!-- MEMORY 1 -->
+        <div class="memory-card">
+
+          <div class="memory-image">
+            <img
+              src="restu-2020.jpeg"
+              alt="Memory 1"
+            />
+          </div>
+
+          <div class="memory-content">
+            <span>01</span>
+            <p>
+              One of those moments
+              worth remembering.
+            </p>
+          </div>
+
+        </div>
+
+
+        <!-- MEMORY 2 -->
+        <div class="memory-card">
+
+          <div class="memory-image">
+            <img
+              src="restu-past.jpeg"
+              alt="Memory 2"
+            />
+          </div>
+
+          <div class="memory-content">
+            <span>02</span>
+            <p>
+              A memory from
+              another chapter.
+            </p>
+          </div>
+
+        </div>
+
+
+        <!-- MEMORY 3 -->
+        <div class="memory-card">
+
+          <div class="memory-image">
+            <img
+              src="reunited-2026.jpeg"
+              alt="Memory 3"
+            />
+          </div>
+
+          <div class="memory-content">
+            <span>03</span>
+            <p>
+              And somehow,
+              here we are again.
+            </p>
+          </div>
+
+        </div>
+
+
+        <!-- MEMORY 4 -->
+        <div class="memory-card">
+
+          <div class="memory-image">
+            <img
+              src="restu-closing.jpeg"
+              alt="Memory 4"
+            />
+          </div>
+
+          <div class="memory-content">
+            <span>04</span>
+            <p>
+              One more memory
+              to keep.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       SECTION 7 — WISHES
+  ========================== -->
+  <section class="section wishes">
+
+    <div class="section-inner center">
+
+      <p class="section-number">
+        06
+      </p>
+
+      <h2>
+        My wishes
+        <span>for you.</span>
+      </h2>
+
+      <div class="wishes-list">
+
+        <div class="wish">
+          <span>01</span>
+          <p>
+            May you always find reasons
+            to smile.
+          </p>
+        </div>
+
+        <div class="wish">
+          <span>02</span>
+          <p>
+            May the things you dream about
+            slowly find their way to you.
+          </p>
+        </div>
+
+        <div class="wish">
+          <span>03</span>
+          <p>
+            May you always be surrounded
+            by people who appreciate you.
+          </p>
+        </div>
+
+        <div class="wish">
+          <span>04</span>
+          <p>
+            And may this year be kinder
+            to you than the last.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       SECTION 8 — MESSAGE
+  ========================== -->
+  <section class="section message-section">
+
+    <div class="section-inner center">
+
+      <p class="section-number">
+        07
+      </p>
+
+      <p class="eyebrow">
+        ONE LAST THING
+      </p>
+
+      <h2>
+        Don't forget
+        <span>how special you are.</span>
+      </h2>
+
+      <p class="section-description">
+        Even on the days when you don't feel like it.
+        Even when things don't go according to plan.
+        You are still someone worth celebrating.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       SECTION 9 — CLOSING PHOTO
+  ========================== -->
+  <section class="section closing-photo">
+
+    <div class="closing-overlay"></div>
+
+    <div class="closing-content">
+
+      <img
+        src="restu-closing.jpeg"
+        alt="Restu"
+      />
+
+      <p>
+        Here's to another year of you.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       SECTION 10 — FINAL
+  ========================== -->
+  <section class="section final-section">
+
+    <div class="section-inner center">
+
+      <p class="eyebrow">
+        HAPPY BIRTHDAY
+      </p>
+
+      <h2>
+        Restu
+        <span>Oktaviani.</span>
+      </h2>
+
+      <div class="final-photo">
+
+        <img
+          src="restu-closing.jpeg"
+          alt="Restu Oktaviani"
+        />
+
+      </div>
+
+      <p class="final-message">
+        May this year bring you
+        everything your heart quietly wishes for.
+      </p>
+
+      <p class="signature">
+        — someone who wishes you well 🤍
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       JAVASCRIPT
+  ========================== -->
   <script src="script.js"></script>
+
 </body>
 </html>
